@@ -1,4 +1,4 @@
-# プロジェクト名
+# タイトル
 OMOP.OHDSI実装プロジェクト in Japan Hospital
 
 # 目次
