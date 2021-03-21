@@ -21,6 +21,9 @@ OMOP.OHDSI実装プロジェクト in Japan Hospital
 
 ## 10.今後の計画
 変換できる項目を増やしていきます。
+## バグや機能のリクエスト Bugs and feature requests
+既存の問題と解決済みの問題を検索してください。 問題やアイデアがまだ解決されていない場合は、新しい問題を投稿してください。
+Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, please open a new issue.
 ## ライセンス
 本成果物はMITライセンスで配布された製作物が含まれています。
 本プロジェクトにはAMED ○○事業（通称臨中ネット）にて製作された成果物が含まれています。
