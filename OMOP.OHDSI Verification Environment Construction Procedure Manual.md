@@ -13,7 +13,7 @@ OMOP　CDMの検証環境を構築するための手順をご説明いたしま�
 ------
 ## ２．システム構成
 
-![image-20210402093512874](../images/img/image-20210402093512874.png)
+![image-20210402093512874](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210402093512874.png)
 
 | |||
 | :------- | ------------------------------------------------------------ |-------------------------------------------------|
@@ -86,7 +86,7 @@ R studio をインストールします。
 ```
 ブラウザから http://**\[サーバIPアドレス\]**:8787 へアクセスし、R Studio を起動します。ログイン画面が表示されたら R Studio のユーザ名・パスワードを入力し、ログインの確認を行います。
 
- ![image-20210401162014465](../images/img/image-20210401162014465.png)
+ ![image-20210401162014465](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162014465.png)
 
 ### ３．４．Libxml2 のインストール
 
@@ -359,11 +359,11 @@ define([], function () {
 
 ブラウザから http://**\[サーバIPアドレス\]**:8787 へアクセスし、R Studio を起動します。ログイン画面が表示されたら R Studio のユーザ名・パスワードを入力し、ログインします。
 
-![image-20210401162228118](./img\image-20210401162228118.png)
+![image-20210401162228118](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162228118.png)
 
 ログイン後、画面左下のコンソールより下記コマンドを入力し、 Achillesをインストールします。
 
-![image-20210401162240604](../images/img/image-20210401162240604.png)
+![image-20210401162240604](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162240604.png)
 ```
 > install.packages("remotes")
 > remotes::install_github("ohdsi/Achilles")
@@ -404,7 +404,7 @@ define([], function () {
 
 ②Userには上記デフォルトで作成されるDBのユーザ名\"postgres\"を記載します。上記を実行し、下記が表示されていればインストール成功です。
 
-![image-20210401162747844](./img\image-20210401162747844.png)
+![image-20210401162747844](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162747844.png)
 
 ※createConnectionDetails関数を呼び出せない場合は、下記コマンドでdatabaseConncection関数を呼び出してから再度、実行してください。
 
@@ -426,7 +426,7 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 ```
 コンテナ起動後、ブラウザから **http://\[ホストのIPアドレス\]:8080/atlas/** へアクセスします。
 
-![image-20210401162822595](./img\image-20210401162822595.png)
+![image-20210401162822595](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162822595.png)
 
 ATLASの画面が表示されたら、一度画面を閉じます。
 
@@ -519,7 +519,7 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 
 ブラウザから http://**\[サーバIPアドレス\]**:8787 へアクセスし、R Studio を起動し、ログインします。
 
-![image-20210401162910324](../images/img/image-20210401162910324.png)
+![image-20210401162910324](./images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162910324.png)
 
 ログイン後、画面左下のConsole部分に下記のコマンドを入力し、Achilles を起動します。
 ```
@@ -573,4 +573,4 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 
 コンテナが起動されている事を確認し、ブラウザから **http://\[ホストのIPアドレス\]:8080/atlas/** へアクセスして下さい。
 
-![image-20210401163325567](../images/img/image-20210401163325567.png)
+![image-20210401163325567](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401163325567.png)
