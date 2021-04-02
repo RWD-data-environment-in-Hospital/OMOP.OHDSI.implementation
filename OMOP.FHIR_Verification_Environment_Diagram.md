@@ -70,6 +70,8 @@ OMOP／FHIR検証の環境をご説明いたします。
 
 ### ４．２．データセキュリティー技術
 
+### ③CentOS　7.6.1810 (DELL)
+
 ![image-20210401163325567](../images/OMOP.FHIR_Verification_Environment_Diagram/imge-202104030832645522.png)
 
 | 用途                                                     | 名称          | バージョン        |
