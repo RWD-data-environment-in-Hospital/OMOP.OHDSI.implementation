@@ -519,7 +519,7 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 
 ブラウザから http://**\[サーバIPアドレス\]**:8787 へアクセスし、R Studio を起動し、ログインします。
 
-![image-20210401162910324](./images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162910324.png)
+![image-20210401162910324](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162910324.png)
 
 ログイン後、画面左下のConsole部分に下記のコマンドを入力し、Achilles を起動します。
 ```
