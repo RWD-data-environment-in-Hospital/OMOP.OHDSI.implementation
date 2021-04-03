@@ -288,25 +288,24 @@ services:
      - .:/tmp/drivers/:ro
      - ./config-local.js:/usr/local/tomcat/webapps/atlas/js/config-local.js:ro
     environment:
-      - WEBAPI_URL=http://[ホストのIPアドレス]:8080											→①
+      - WEBAPI_URL=http://[ホストのIPアドレス]:8080                            →①
       - env=webapi-postgresql
       - datasource_driverClassName=org.postgresql.Driver
       - datasource_url=jdbc:postgresql://[ホストのIPアドレス]:5432/[データベース名]			→②
-      - datasource.cdm.schema=[CDM用のスキーマ名]												→③
-      - datasource.ohdsi.schema=[WebAPI用のスキーマ名]→④
-      - datasource_username=[データベース接続ユーザ名]											→⑤
-      - datasource_password=[データベース接続パスワード]											→⑥
+      - datasource.cdm.schema=[CDM用のスキーマ名]                              →③
+      - datasource.ohdsi.schema=[WebAPI用のスキーマ名]                          →④
+      - datasource_username=[データベース接続ユーザ名]                          →⑤
+      - datasource_password=[データベース接続パスワード]                        →⑥
       - spring.jpa.properties.hibernate.default_schema=[WebAPI用のスキーマ名]
       - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
       - spring.batch.repository.tableprefix=ohdsi.BATCH_
       - flyway_datasource_driverClassName=org.postgresql.Driver
       - flyway_datasource_url=jdbc:postgresql://[ホストのIPアドレス]:5432/[データベース名]		→②
-      - flyway_schemas=[WebAPI用のスキーマ名]													→④
-      - flyway.placeholders.ohdsiSchema=[WebAPI用のスキーマ名]									→④
-      - flyway_datasource_username=[データベース接続ユーザ名]									→⑤
-      - flyway_datasource_password=[データベース接続パスワード]									→⑥
+      - flyway_schemas=[WebAPI用のスキーマ名]                                  →④
+      - flyway.placeholders.ohdsiSchema=[WebAPI用のスキーマ名]                  →④
+      - flyway_datasource_username=[データベース接続ユーザ名]                  →⑤
+      - flyway_datasource_password=[データベース接続パスワード]                 →⑥
       - flyway.locations=classpath:db/migration/postgresql
-
 ```
 - ①\[ホストのIPアドレス\]：Dockerが動作しているホストのIPアドレスを指定します。
 
