@@ -291,7 +291,7 @@ services:
       - WEBAPI_URL=http://[ホストのIPアドレス]:8080                            →①
       - env=webapi-postgresql
       - datasource_driverClassName=org.postgresql.Driver
-      - datasource_url=jdbc:postgresql://[ホストのIPアドレス]:5432/[データベース名]			→②
+      - datasource_url=jdbc:postgresql://[ホストのIPアドレス]:5432/[データベース名]                                                                            →②
       - datasource.cdm.schema=[CDM用のスキーマ名]                              →③
       - datasource.ohdsi.schema=[WebAPI用のスキーマ名]                          →④
       - datasource_username=[データベース接続ユーザ名]                          →⑤
@@ -300,7 +300,7 @@ services:
       - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
       - spring.batch.repository.tableprefix=ohdsi.BATCH_
       - flyway_datasource_driverClassName=org.postgresql.Driver
-      - flyway_datasource_url=jdbc:postgresql://[ホストのIPアドレス]:5432/[データベース名]		→②
+      - flyway_datasource_url=jdbc:postgresql://[ホストのIPアドレス]:5432/[データベース名]                                                                    →②
       - flyway_schemas=[WebAPI用のスキーマ名]                                  →④
       - flyway.placeholders.ohdsiSchema=[WebAPI用のスキーマ名]                  →④
       - flyway_datasource_username=[データベース接続ユーザ名]                  →⑤
