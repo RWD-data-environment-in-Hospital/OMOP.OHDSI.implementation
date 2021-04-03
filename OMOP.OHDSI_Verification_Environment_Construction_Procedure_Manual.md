@@ -391,10 +391,11 @@ define([], function () {
 ※DBがPostgreSQL以外の場合は対応するドライバをインストールしてください。下記でCohortMethodパッケージが正しくインストールされているか確認します。
 ```
 > connectionDetails <- createConnectionDetails(dbms="postgresql",
-	server="localhost/postgres",												→①
-	user = "postgres",															→②
+	server="localhost/postgres",                                      →①
+	user = "postgres",                                                →②
 	password = "｛PostgreSQLインストール時に設定したパスワード｝")
 > checkCmInstallation(connectionDetails)
+
 ```
 ①serverには\"｛ホスト名（またはホストのIPアドレス）｝/｛DB名｝\"を記載します。
 
