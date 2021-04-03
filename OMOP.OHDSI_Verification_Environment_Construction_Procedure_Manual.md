@@ -527,15 +527,15 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 > Sys.setenv("DATABASECONNECTOR_JAR_FOLDER"="/home/rstudio/jdbcDrivers")
 > connectionDetails <- createConnectionDetails( 
 	dbms="postgresql",
-	server="[サーバIPアドレス]/[データベース名]",　                         →①
-	user="[データベース接続ユーザ名]",　　　                                →②
-	password="[データベース接続パスワード]",　　                            →③
-	port="5432")                                             
-> achilles(connectionDetails,                              
-	cdmDatabaseSchema = "[CDMのスキーマ]",　                               →④
-	resultsDatabaseSchema="[WebAPIのスキーマ]",　                          →⑤
-	vocabDatabaseSchema = "[CDMのスキーマ]", numThreads = 1,　             →⑥
-	sourceName = "[テーブル設定内容]",　　　　　　　                        →⑦
+	server="[サーバIPアドレス]/[データベース名]",                      →①
+	user="[データベース接続ユーザ名]",                                 →②
+	password="[データベース接続パスワード]",                           →③
+	port="5432")
+> achilles(connectionDetails,
+	cdmDatabaseSchema = "[CDMのスキーマ]",                             →④
+	resultsDatabaseSchema="[WebAPIのスキーマ]",                        →⑤
+	vocabDatabaseSchema = "[CDMのスキーマ]", numThreads = 1,           →⑥
+	sourceName = "[テーブル設定内容]",                                 →⑦
 	cdmVersion = "5.3.1", 
 	runHeel = FALSE, 
 	runCostAnalysis = FALSE)
