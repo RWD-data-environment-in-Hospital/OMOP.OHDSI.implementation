@@ -527,7 +527,7 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 > Sys.setenv("DATABASECONNECTOR_JAR_FOLDER"="/home/rstudio/jdbcDrivers")
 > connectionDetails <- createConnectionDetails( 
 	dbms="postgresql",
-	server="[サーバIPアドレス]/[データベース名]",      →①
+	server="[サーバIPアドレス]/[データベース名]",　                         →①
 	user="[データベース接続ユーザ名]",　　　                                →②
 	password="[データベース接続パスワード]",　　                            →③
 	port="5432")                                             
