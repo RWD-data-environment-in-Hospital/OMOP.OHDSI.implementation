@@ -88,13 +88,56 @@ R studio をインストールします。
 
  ![image-20210401162014465](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162014465.png)
 
-### ３．４．Libxml2 のインストール
+OMOP DASHBOARDの動作に必要なRパッケージをインストールします。
+
+・R Shiny
+```
+# R -e \"install.packages(\'shiny\', repos=\'http://cran.rstudio.com/\')\"
+```
+・Shiny DashBoard
+```
+# R -e \"install.packages(\'shinydashboard\', repos=\'http://cran.rstudio.com/\')\"
+```
+・DataTable
+```
+# R -e \"install.packages(\'DT\', repos=\'http://cran.rstudio.com/\')\"
+```
+
+### ３．４．Shiny Serverのインストール
+
+対象サーバに root 特権のあるユーザでログインします。
+
+Shiny Serverをインストールします。
+```
+# wget https://download3.rstudio.org/centos7/x86_64/**shiny-server-1.5.16.958-x86_64.rpm**
+# yum install \--nogpgcheck **shiny-server-1.5.16.958-x86_64.rpm**
+```
+インストール完了後、Shiny Serverを起動します。
+```
+# systemctl start shiny-server
+```
+※Shiny Serverを停止する場合は、以下のコマンドを実行します。
+```
+# systemctl stop shiny-server
+```
+Shiny Serverで使用するポートを開放するため、Firewallの設定を変更します。
+```
+# firewall-cmd \--add-port=3838/tcp \--permanent
+# firewall-cmd \--reload
+```
+ブラウザから「**http://\[ホストのIPアドレス\]:3838**」にアクセスします。
+
+以下のような画面が表示されれば成功です。
+
+![image-20210401162014465](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210518172884292.png)
+
+### ３．５．Libxml2 のインストール
 
 Libxml2 をインストールします（Achilles をインストールする際に必要となります）。
 ```
 # sudo yum install libxml2-devel
 ```
-### ３．５．GitHUB からの資産ダウンロード
+### ３．６．GitHUB からの資産ダウンロード
 
 GitHUBから以下の資産をダウンロードします。 
 
