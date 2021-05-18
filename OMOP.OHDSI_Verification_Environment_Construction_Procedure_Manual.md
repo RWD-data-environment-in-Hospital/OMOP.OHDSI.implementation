@@ -168,10 +168,13 @@ root特権ユーザでログインし、Broadseaの設定ファイルをGitHUB�
 # tar -zxvf v5.3.1.tar.gz
 ```
 PostgreSQL用のテーブル定義は取得した資産の下記ディレクトリにあります。
-​	CommonDataModel-5.3.1/PostgreSQL/
-​		OMOP CDM postgresql ddl.txt
-​		OMOP CDM postgresql pk indexes.txt
-​		OMOP CDM postgresql constraints.txt
+<dl>
+	<dt>CommonDataModel-5.3.1/PostgreSQL/</dt>
+		<dd>OMOP CDM postgresql ddl.txt</dd>
+		<dd>OMOP CDM postgresql pk indexes.txt</dd>
+		<dd>OMOP CDM postgresql constraints.txt</dd>
+</dl>
+
 上記の様にファイル名にスペースが含まれている状態のため、スペースを除去した形へリネームを行います。
 
 ```
@@ -217,7 +220,7 @@ postgres=# select current_schema();
 (1 行)
 ```
 
-３．４．で取得したテーブル定義を実行し、OMOP CDMのテーブルを作成します。
+３．６．で取得したテーブル定義を実行し、OMOP CDMのテーブルを作成します。
 ```
 postgres=# \i /home/postgres/CommonDataModel-5.3.1/PostgreSQL/OMOPCDMpostgresqlddl.txt
 postgres=# \i /home/postgres/CommonDataModel-5.3.1/PostgreSQL/OMOPCDMpostgresqlddl.txt
@@ -238,7 +241,7 @@ postgres=# \dt
 ```
 postgres=# \q
 ```
-### ４．3．レコード投入方法のご紹介
+### ４．３．レコード投入方法のご紹介
 
 CDMへのレコードの挿入は、タブ区切りファイル等をpsqlで取り込む事で行います。
 
@@ -295,11 +298,11 @@ Dockerが起動している状態で実行します。
 
 ### ５．２．設定ファイルの編集
 
-３．３．で取得した設定ファイルを編集します。
+３．６．で取得した設定ファイルを編集します。
 
 Broadsea/postgresqlディレクトリにあるファイル、docker-compose.ymlをBroadseaディレクトリにコピーします。
 
-※３．３の例と同様に、取得したファイルを「/root/dockerwk」へ移動した前提として記載しています。
+※３．６の例と同様に、取得したファイルを「/root/dockerwk」へ移動した前提として記載しています。
 ```
 # cd /root/dockerwk/Broadsea/postgresql
 # cp docker-compose.yml ../
@@ -470,6 +473,8 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 コンテナ起動後、ブラウザから **http://\[ホストのIPアドレス\]:8080/atlas/** へアクセスします。
 
 ![image-20210401162822595](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401162822595.png)
+
+※本手順では、「Search」、「Profiles」のみ使用可能になります。
 
 ATLASの画面が表示されたら、一度画面を閉じます。
 
