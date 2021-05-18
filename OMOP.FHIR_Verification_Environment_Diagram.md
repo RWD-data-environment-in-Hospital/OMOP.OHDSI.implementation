@@ -24,7 +24,7 @@ OMOP／FHIR検証の環境をご説明いたします。
 
 ### ①Windows10 Pro (EPSON)
 
-![image-20210403070796524](../images/OMOP.FHIR_Verification_Environment_Diagram/image-202105181334746358.png)
+![image-20210403070796524](../images/OMOP.FHIR_Verification_Environment_Diagram/image-20210518133474635.png)
 
 | 用途                                  | 名称                 | バージョン      |
 | ------------------------------------- | -------------------- | --------------- |
