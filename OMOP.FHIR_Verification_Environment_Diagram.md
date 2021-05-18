@@ -15,7 +15,7 @@ OMOP／FHIR検証の環境をご説明いたします。
 ------
 ## ２．システムとネットワーク構成図
 
-![image-20210403070796524](../images/OMOP.FHIR_Verification_Environment_Diagram/image-20210403051996524.png)
+![image-20210403070796524](../images/OMOP.FHIR_Verification_Environment_Diagram/image-20210518133402167.png)
 
 ------
 ## ３．開発環境
