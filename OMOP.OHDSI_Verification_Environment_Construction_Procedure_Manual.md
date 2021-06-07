@@ -656,18 +656,16 @@ dbname="[データベース名]"
 
 以下のような画面が表示されれば成功です。
 
-![](.\images\OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/OMOPveri1-1620969826553.png)
+![image-1620969826553.png](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-1620969826553.png)
 
 ------
 ## ８．OMOP DASHBOARD使用方法
 
 表示条件を設定します。
 
-![](D:\Users\takagi.h\Desktop\新しいフォルダー (2)\img\OMOPveri2-1620970029939.png)
-
-
+![image-1620970029939.png](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-1620970029939.png)
 
 「表示」ボタンをクリックすると、指定したパス名と病名の条件で使用されている薬品の総量をグラフ表示します。
 
-![](D:\Users\takagi.h\Desktop\新しいフォルダー (2)\img\OMOPveri3-1620970053040.png)
+![image-1620970053040.png](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-1620970053040.png)
 ------
