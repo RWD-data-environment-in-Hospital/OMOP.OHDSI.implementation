@@ -622,4 +622,52 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 コンテナが起動されている事を確認し、ブラウザから **http://\[ホストのIPアドレス\]:8080/atlas/** へアクセスして下さい。
 
 ![image-20210401163325567](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401163325567.png)
+
+------
+## ７．OMOP DASHBOARDのセットアップ
+
+OMOP DASHBOARDのファイル構成は以下のようになっています。
+
+```
+OMOPVeri
+ ├─ www
+ │ └─ style.css
+ ├─ app.R
+ ├─ global.R
+ ├─ javaScript.R
+ ├─ server.R
+ ├─ server_DataList.R
+ ├─ ui.R
+ └─ ui_DataList.R
+```
+
+FTPにて、OMOP DASHBOARDの資源「OMOPVeri」をディレクトリごとサーバの「/sev/shiny-server」に配置します。
+
+「/srv/shiny-server/OMOPVeri/server_DataList.R」に記載されているデータベース接続情報（2か所に記述があります）を、以下のように修正します。
+
+```
+host="[データベースサーバーのIPアドレス]"
+user="[データベースの接続ユーザー名]"
+password="[データベースの接続パスワード]"
+dbname="[データベース名]"
+```
+
+ブラウザから「**http://\[ホストのIPアドレス\]:3838/OMOPVeri**」にアクセスします。
+
+以下のような画面が表示されれば成功です。
+
+![](.\images\OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/OMOPveri1-1620969826553.png)
+
+------
+## ８．OMOP DASHBOARD使用方法
+
+表示条件を設定します。
+
+![](D:\Users\takagi.h\Desktop\新しいフォルダー (2)\img\OMOPveri2-1620970029939.png)
+
+
+
+「表示」ボタンをクリックすると、指定したパス名と病名の条件で使用されている薬品の総量をグラフ表示します。
+
+![](D:\Users\takagi.h\Desktop\新しいフォルダー (2)\img\OMOPveri3-1620970053040.png)
 ------
