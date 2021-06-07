@@ -18,7 +18,7 @@ OMOP　CDMの検証環境を構築するための手順をご説明いたしま�
 |用途      |名称                                                          |備考　　　　　 　　　　　　　　　　　　　　 　|
 |--------- | ------------------------------------------------------------ |------------------------------------------|
 | Docker   | https://www.docker.com/                                      |本手順書では、バージョン20.10.3を使用します|
-| Broadsea | https://github.com/hapifhir/hapi-fhir-jpaserver-starter      |本手順書では、バージョン2.8.0を使用します  |
+| Broadsea | https://github.com/OHDSI/Broadsea                            |本手順書では、バージョン2.8.0を使用します  |
 | R studio | https://rstudio.com/                                         |本手順書では、バージョン1.4を使用します    |
 | HADES    | https://ohdsi.github.io/Hades/rSetup.html                    ||
 
