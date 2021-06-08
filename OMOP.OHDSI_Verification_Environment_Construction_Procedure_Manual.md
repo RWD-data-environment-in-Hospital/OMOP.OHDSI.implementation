@@ -668,4 +668,7 @@ dbname="[データベース名]"
 「表示」ボタンをクリックすると、指定したパス名と病名の条件で使用されている薬品の総量をグラフ表示します。
 
 ![image-1620970053040](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-1620970053040.png)
+------    
+![image-20210402093512874](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210402093512874.png)
 ------
+
