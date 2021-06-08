@@ -609,7 +609,6 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 
 以上で環境構築の手順は完了となります。
 
-------
 ## ６．ATLAS画面表示
 
 「docker ps -a」コマンドを実行し、コンテナが起動されている事を確認します。
@@ -623,7 +622,6 @@ Starting broadseamaster_broadsea-webtools_1 ... Done
 
 ![image-20210401163325567](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210401163325567.png)
 
-------
 ## ７．OMOP DASHBOARDのセットアップ
 
 OMOP DASHBOARDのファイル構成は以下のようになっています。
@@ -656,19 +654,16 @@ dbname="[データベース名]"
 
 以下のような画面が表示されれば成功です。
 
-![image-1620969826553](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-1620969826553.png)
+![image-20210608969826553](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210608969826553.png)
 
-------
 ## ８．OMOP DASHBOARD使用方法
 
 表示条件を設定します。
 
-![image-1620970029939](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-1620970029939.png)
+![image-20210608970029939](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210608970029939.png)
 
 「表示」ボタンをクリックすると、指定したパス名と病名の条件で使用されている薬品の総量をグラフ表示します。
 
-![image-1620970053040](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-1620970053040.png)
-------    
-![image-20210402093512874](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210402093512874.png)
-------
+![image-20210608970053040](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210608970053040.png)
 
+------
