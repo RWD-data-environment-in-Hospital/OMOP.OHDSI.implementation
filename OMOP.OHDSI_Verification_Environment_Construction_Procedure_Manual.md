@@ -667,3 +667,4 @@ dbname="[データベース名]"
 ![image-20210608970053040](../images/OMOP.OHDSI_Verification_Environment_Construction_Procedure_Manual/image-20210608970053040.png)
 
 ------
+
