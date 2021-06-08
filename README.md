@@ -5,8 +5,7 @@ OMOP.OHDSI実装プロジェクト in Japan Hospital
 本プロジェクトはOMOPを病院情報システムからデータが取り出せるように実装するプロジェクトです。
 
 ## 4.システム構成図
-![システム構成図はこちらです](../Global Standardization of Hospital Information Systems_OMOP.pdf)
-
+[システム構成図はこちら](../Global Standardization of Hospital Information Systems_OMOP.pdf)
 
 ## 10.今後の計画
 変換できる項目を増やしていきます。
